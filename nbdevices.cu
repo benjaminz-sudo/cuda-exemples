@@ -4,7 +4,7 @@ int main(void) {
 	cudaGetDeviceCount(&count);
 	printf("Number of device(s) : %d", count);
 	cudaDeviceProp prop;
-	/*for (int i = 0; i < count; i++) {
+	for (int i = 0; i < count; i++) {
 		cudaGetDeviceProperties(&prop, i);
 		printf(" --- General Information for device %d ---\n", i);
 		printf("Name: %s\n", prop.name);
@@ -27,7 +27,7 @@ int main(void) {
 			prop.maxGridSize[0], prop.maxGridSize[1],
 			prop.maxGridSize[2]);
 		printf("\n");
-	}*/
+	}
 
 }
 
